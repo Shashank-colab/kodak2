@@ -1,10 +1,13 @@
 import React from "react";
-import { useGLTF } from "@react-three/drei";
+import { useGLTF,useScroll } from "@react-three/drei";
+
 
 export default function Plane(props) {
   const { nodes, materials } = useGLTF("/small-airplane-v3.gltf");
-
+  
   return (
+    
+    
     <group {...props}>
       <group scale={[0.5, 0.5, 0.5]}>
         <mesh
